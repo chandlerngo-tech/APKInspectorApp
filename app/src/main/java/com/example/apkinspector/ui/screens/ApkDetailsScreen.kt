@@ -8,6 +8,7 @@ import androidx.compose.ui.unit.dp
 
 @Composable
 fun ApkDetailsScreen(
+    packageName: String,
     onBack: () -> Unit
 ) {
     Column(
@@ -17,13 +18,12 @@ fun ApkDetailsScreen(
         verticalArrangement = Arrangement.spacedBy(16.dp)
     ) {
         Text(
-            text = "APK Details",
+            "APK Details",
             style = MaterialTheme.typography.headlineMedium
         )
 
-        Text("Application metadata will appear here.")
-
-        Text("Permissions and APK information will appear here.")
+        Text("Package: $packageName")
+        Text("APK extraction coming in Week 3.")
 
         Button(onClick = onBack) {
             Text("Back")

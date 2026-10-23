@@ -19,8 +19,10 @@ fun AppNavigation() {
     ) {
         composable("apps") {
             AppListScreen(
-                onNavigateToDetails = {
-                    navController.navigate("details")
+                onNavigateToDetails = { packageName ->
+                    navController.navigate(
+                        "details/${android.net.Uri.encode(packageName)}"
+                    )
                 },
                 onNavigateToHistory = {
                     navController.navigate("history")
@@ -28,11 +30,13 @@ fun AppNavigation() {
             )
         }
 
-        composable("details") {
+        composable("details/{packageName}") { entry ->
+            val packageName =
+                entry.arguments?.getString("packageName").orEmpty()
+
             ApkDetailsScreen(
-                onBack = {
-                    navController.popBackStack()
-                }
+                packageName = packageName,
+                onBack = { navController.popBackStack() }
             )
         }
 
