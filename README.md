@@ -30,14 +30,17 @@ Model Layer:
 Screenshots of all major screens:
 
 Application Browser:
+
 <img width="322" height="725" alt="image" src="https://github.com/user-attachments/assets/c159843f-b87a-48b2-bf15-669bfae2f7d8" />
 
 
 APK File Structure and Extract Option:
+
 <img width="325" height="727" alt="image" src="https://github.com/user-attachments/assets/df88c677-883c-4702-967b-25c6c21ce28d" />
 
 
 Analysis History:
+
 <img width="326" height="728" alt="image" src="https://github.com/user-attachments/assets/a0b6601c-8ca2-4a38-bb1e-8639a6fd8e8d" />
 
 
