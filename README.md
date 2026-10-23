@@ -21,12 +21,12 @@ ViewModel:
 - AppListViewModel.kt
 - ApkDetailsViewModel.kt
 
-Data Layer:
+Data:
 - InstalledAppRepository.kt
 - ApkAnalyzer.kt
 - ApkExporter.kt
 
-Model Layer:
+Model:
 - InstalledApp.kt
 - ApkFileEntry.kt
   
