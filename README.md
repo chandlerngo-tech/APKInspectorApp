@@ -16,13 +16,16 @@ UI:
 - ApkDetailsScreen.kt
 - HistoryScreen.kt
 - AppNavigation.kt
+  
 ViewModel:
 - AppListViewModel.kt
 - ApkDetailsViewModel.kt
+
 Data Layer:
 - InstalledAppRepository.kt
 - ApkAnalyzer.kt
 - ApkExporter.kt
+
 Model Layer:
 - InstalledApp.kt
 - ApkFileEntry.kt
